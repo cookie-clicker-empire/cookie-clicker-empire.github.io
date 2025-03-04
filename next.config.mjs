@@ -22,8 +22,8 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   output: "export", // Enable static exports
-  basePath: "/vo-cookie-clicker-main", // Replace with your repo name
-  assetPrefix: "/vo-cookie-clicker-main/", // Replace with your repo name
+  basePath: "/cookie-clicker-empire", // Replace with your repo name
+  assetPrefix: "/cookie-clicker-empire/", // Replace with your repo name
 };
 
 mergeConfig(nextConfig, userConfig);
