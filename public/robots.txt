@@ -1,0 +1,41 @@
+# https://cookie-clicker-empire.github.io/robots.txt
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://cookie-clicker-empire.github.io/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 10
+
+# Block sensitive directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /backup/
+
+# Allow important directories
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /public/
+
+# Block specific file types
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+
+# Allow specific files
+Allow: /ads.txt
+Allow: /sitemap.xml
+
+# Block parameters
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /*?*search=
+Disallow: /*?*page=
+
+# Rate limiting
+Request-rate: 1/10
+Visit-time: 0600-2200 
