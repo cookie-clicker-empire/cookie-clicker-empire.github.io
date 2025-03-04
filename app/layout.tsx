@@ -1,10 +1,10 @@
-import type React from "react"
-import "./globals.css"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import Script from "next/script"
+import type React from "react";
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"], display: "swap" })
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "Cookie Clicker - Play Online for Free | Best Idle Game 2025",
@@ -60,13 +60,13 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -75,11 +75,32 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#FFA500" />
-        <meta name="google-site-verification" content="your-verification-code" />
+        <meta
+          name="google-site-verification"
+          content="Tx6ZacnVnvGQhXsWQxuphlBeTkJ2HQw9Fisx0s7QNXQ"
+        />
         <link rel="canonical" href="https://your-domain.com" />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5465435428148924"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={inter.className}>
         {children}
+        <div>
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client="ca-pub-5465435428148924"
+            data-ad-slot="3397074125"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          />
+          <Script id="adsense-init">
+            {`(adsbygoogle = window.adsbygoogle || []).push({});`}
+          </Script>
+        </div>
         <Script id="schema-script" type="application/ld+json">
           {`
             {
@@ -162,9 +183,7 @@ export default function RootLayout({
         </Script>
       </body>
     </html>
-  )
+  );
 }
 
-
-
-import './globals.css'
+import "./globals.css";
